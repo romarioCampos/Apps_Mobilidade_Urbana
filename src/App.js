@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// Os import's utilizados para fazer 
+import Header from './ui/Header';
+import Ilustracao from './ui/Ilustracao';
+import Conteudo from './ui/Conteudo';
+import Desfecho from './ui/Desfecho';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="header">
+      <Header />
+      <div className="ilustracao">
+        <Ilustracao />
+      </div>
+      <div className="conteudo">
+        <Conteudo />
+      </div>
+      <div className="desfecho">
+        <Desfecho />
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
